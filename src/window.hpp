@@ -15,7 +15,7 @@ enum class Direction { DOWN, UP, RIGHT, LEFT };
 /// Edits and displays buffers
 class Window {
 public:
-    Window(Buffer&);
+    explicit Window(Buffer&);
     ~Window();
 
     std::size_t currentByte; ///< Byte cursor is currently over
@@ -64,7 +64,7 @@ private:
     void placeCursor(); ///< Place cursor on current x,y coordinates
 
     struct Opts {
-        Opts(Window&);
+        explicit Opts(Window&);
         Window& w;
 
         unsigned short cols() const;  ///< Maximal number of columns of bytes

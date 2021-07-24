@@ -52,6 +52,7 @@ public:
 
     int input(); ///< Gets keystrokes
     int loop();  ///< Interprets keystrokes into actions
+
     void setOption(std::string);
 
     WINDOW* statusline;

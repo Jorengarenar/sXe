@@ -28,6 +28,8 @@ Mappings::Mappings() :
         { { 'Z', 'Z' }, { Action::SAVEQUIT } },
         { { CTRL('a') }, { Action::INCREMENT } },
         { { CTRL('x') }, { Action::DECREMENT } },
+        { { 'u' }, { Action::UNDO } },
+        { { CTRL('r') }, { Action::REDO } },
     }
 {
     for (auto m: defaults) {

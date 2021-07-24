@@ -299,6 +299,7 @@ int Window::insertByte()
     }
     else {
         eraseByte();
+        return 1;
     }
 
     return 0;

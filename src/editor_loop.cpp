@@ -96,7 +96,9 @@ int Editor::loop()
                     replaceByte();
                     break;
                 case Action::INSERT:
-                    cw->insertByte();
+                    while (cw->insertByte() == 0) {
+                        cw->currentByte++;
+                    }
                     break;
                 case Action::APPEND:
                     cw->currentByte += 1;
@@ -117,6 +119,11 @@ int Editor::loop()
                     [[fallthrough]];
                 case Action::QUIT:
                     return 0;
+
+                case Action::UNDO:
+                    break;
+                case Action::REDO:
+                    break;
 
                 default:
                     break;

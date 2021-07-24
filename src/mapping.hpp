@@ -37,6 +37,8 @@ enum class Action {
     NEXTFILLED,
     NEXTFILLEDBLOCK,
     NEXTTAB,
+    UNDO,
+    REDO,
 };
 
 class Mappings {
