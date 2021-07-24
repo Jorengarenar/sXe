@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sxe_178',['sxe',['../namespacesxe.html',1,'']]]
+  ['sxe_180',['sxe',['../namespacesxe.html',1,'']]]
 ];
